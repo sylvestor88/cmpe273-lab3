@@ -39,7 +39,7 @@ public class Client {
         al.add(node3);
         
         ConsistentHash hashAlgo = new ConsistentHash(hf, 1, al);
-//        RendezvousHash hashAlgo = new RendezvousHash(hf, strFunnel, strFunnel, al);
+        // RendezvousHash hashAlgo = new RendezvousHash(hf, strFunnel, strFunnel, al);
         
         String objNode1 =(String)hashAlgo.get("1");
         String objNode2 =(String)hashAlgo.get("2");
@@ -78,18 +78,7 @@ public class Client {
             else if(node.equals(node3)) cache3.put(i, objects.get(i));
         }
         
-//        System.out.println("get(2) => " + cache1.get(2));
-//        System.out.println("get(3) => " + cache1.get(3));
-//        System.out.println("get(4) => " + cache1.get(4));
-//        System.out.println("get(7) => " + cache1.get(7));
-//        System.out.println("get(8) => " + cache1.get(8));
-//        System.out.println("get(6) => " + cache2.get(6));
-//        System.out.println("get(1) => " + cache3.get(1));
-//        System.out.println("get(5) => " + cache3.get(5));
-//        System.out.println("get(9) => " + cache3.get(9));
-//        System.out.println("get(10) => " + cache3.get(10));
-        
-        System.out.println("Existing Cache Client...");
+        System.out.println("Exiting Cache Client...");
     }
 
 }
